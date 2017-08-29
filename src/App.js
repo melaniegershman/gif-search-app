@@ -29,7 +29,7 @@ export default class App extends Component {
   }
 
   performSearch = (query = 'yorkie puppies') => {
-      let url = `http://api.giphy.com/v1/gifs/search?q=${query}&limit=24&api_key=dc6zaTOxFJmzC`
+      let url = `https://api.giphy.com/v1/gifs/search?q=${query}&limit=24&api_key=dc6zaTOxFJmzC`
       axios.get(url)
           .then(response => {
               this.setState({
